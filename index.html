@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>OMDB</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container" id="form-section">
+        <h1 class="text-center">Search For Movie Details Here</h1>
+        <form>
+            <div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                    <input class="form-control" type="text" placeholder="Search By Movie Title" id="movieTitle">
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                    <input class="form-control" type="text" placeholder="Search By IMDb ID" id="movieId">
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <button class="btn btn-primary" type="button" id="search">Search <i class="fa fa-search"></i> </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="loader" id="circle"></div></div>
+    </div>
+    
+    <div id="result" class="moviebox">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img id="poster" src="assets/img/Dummy.jpg" class="img-responsive"></div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" id= "card">
+                    <h3 class="text-center" id="title"> </h3>
+                    <p class="text-center" id="plot"> </p>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <p class="text-left" id="actor"> <strong>Actors :</strong></p>
+                            <p class="text-left" id="award"> <strong>Awards : </strong></p>
+                            <p class="text-left" id="boxoffice"> <strong>Box-Office: </strong></p>
+                            <p class="text-left" id="country"> <strong>Country: </strong></p>
+                            <p class="text-left" id="dvd"> <strong>DVD: </strong></p>
+                            <p class="text-left" id="director"> <strong>Director:</strong></p>
+                            <p class="text-left" id="genre"> <strong>Genre:</strong></p>
+                            <p class="text-left" id="language"> <strong>Language :</strong></p>
+                            <p class="text-left" id="metascore"> <strong>Metascore:</strong></p>
+                            <p class="text-left" id="rated"> <strong>Rated:</strong></p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <p class="text-left" id="ratings"> <strong>Ratings:</strong></p>
+                            <p class="text-left" id="released"> <strong>Released:</strong></p>
+                            <p class="text-left" id="runtime"> <strong>Runtime:</strong></p>
+                            <p class="text-left" id="type"> <strong>Type:</strong></p>
+                            <p class="text-left" id="website"> <strong>Website:</strong></p>
+                            <p class="text-left" id="writer"> <strong>Writer:</strong></p>
+                            <p class="text-left" id="year"> <strong>Year:</strong></p>
+                            <p class="text-left" id="imdb-id"> <strong>IMDb ID:</strong></p>
+                            <p class="text-left" id="imdb-rating"><strong>IMDb Rating:</strong></p>
+                            <p class="text-left" id="imdb-vote"> <strong>IMBd Votes:</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <button class="btn btn-primary" type="button" id="goBack">Go Back </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/omdb.js"></script>
+</body>
+
+</html>
